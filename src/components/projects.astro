@@ -1,41 +1,35 @@
 ---
-
 interface Project {
   title: string;
   image: string;
   link: string;
-  preview: string;
   status: string;
 }
 
 const projects: Project[] = [
   {
-    title: "Project One",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Project+One",
-    link: "https://github.com",
-    preview: "https://example.com",
-    status: "Deployed",
+    title: "3Minutos - App de Noticias",
+    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=3Minutos",
+    link: "https://github.com/lucotuco/3MinutosFront",
+    status: "Node.js • Express • OpenAI",
   },
   {
-    title: "Project Two",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Two",
-    link: "https://github.com",
-    preview: "https://example.com",
-    status: "On Development",
+    title: "ERP Turismo Judaico",
+    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=ERP+Turismo",
+    link: "https://github.com/turismojudaicodev/turismojudaico",
+    status: "Next.js • MySQL • Stripe",
   },
   {
-    title: "Project Three",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Three",
-    link: "https://github.com",
-    preview: "https://example.com",
-    status: "Contributor",
+    title: "Premier Sur Tours",
+    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Premier+Sur+Tours",
+    link: "https://github.com/lucotuco/Premier-Sur-Tours",
+    status: "Next.js • Supabase • Mercado Pago",
   },
   {
-    title: "Project Four",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Four",
-    link: "https://github.com",
-    preview: "https://example.com",
-    status: "Deployed",
+    title: "DAN - Coach Deportivo IA",
+    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=DAN+Coach",
+    link: "https://github.com/lucotuco/Dan-Coach-Mental",
+    status: "React Native • WebRTC • RAG",
   },
 ];
 ---
@@ -45,15 +39,14 @@ const projects: Project[] = [
   class="py-12 border-t border-[#ffffff10] text-[var(--white)]"
 >
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">My work</h2>
-    <h3 class="text-4xl md:text-5xl font-medium mb-8">Projects</h3>
+    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">Mi trabajo</h2>
+    <h3 class="text-4xl md:text-5xl font-medium mb-8">Proyectos Destacados</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
         projects.map((project) => (
           <div class="group">
             <a
-              href={project.preview}
               target="_blank"
               rel="noopener noreferrer"
               class="block"
@@ -88,21 +81,6 @@ const projects: Project[] = [
                       <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z" />
                     </svg>
                   </a>
-                  <a
-                    target="_blank"
-                    href={project.preview}
-                    aria-label="Preview"
-                    class="size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="size-7"
-                    >
-                      <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z" />
-                    </svg>
-                  </a>
                 </div>
               </div>
             </a>
@@ -112,11 +90,11 @@ const projects: Project[] = [
     </div>
     <a
       target="_blank"
-      href="https://github.com"
+      href="https://github.com/lucotuco"
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >
-      <span class="md:text-lg text-md">More projects on</span>
+      <span class="md:text-lg text-md">Más proyectos en GitHub</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
